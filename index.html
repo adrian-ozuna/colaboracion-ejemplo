@@ -26,12 +26,32 @@
       background: #f5f5f5;
       border-radius: 6px;
     }
+    .yelaisa-name {
+      text-decoration: underline;
+      text-decoration-color: #ff69b4;
+      text-underline-offset: 3px;
+    }
+    .heart-i {
+      display: inline-block;
+      position: relative;
+    }
+    .heart-i::after {
+      content: '♥';
+      position: absolute;
+      top: -0.3em;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.55em;
+      color: #ff69b4;
+      line-height: 1;
+    }
   </style>
 </head>
 <body>
   <h1>List of Names</h1>
   <ul>
     <li>Adrian Ozuna</li>
+    <li class="yelaisa-name">Yela<span class="heart-i">ı</span>sa la mejor de esta clase</li>
   </ul>
 </body>
 </html>
